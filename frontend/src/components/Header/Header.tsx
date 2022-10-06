@@ -1,8 +1,16 @@
-import { HeaderContainer } from "./Header.style"
+import { HeaderContainer, Logo } from "./Header.style"
 
 const Header = () =>{
     return(
-        <HeaderContainer>TreinaWeb</HeaderContainer>
+        <HeaderContainer>
+            <div>
+                <Logo src="/images/myteacher.png"/>
+            </div>
+            <p>
+                Econtre o professor perfeito!
+            </p>
+
+        </HeaderContainer>
     )
 }
 

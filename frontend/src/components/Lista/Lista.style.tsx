@@ -34,7 +34,7 @@ export const Valor = styled("p")`
 
 export const Descricao = styled("p")`
   word-break: break-word;
-  padding: ${({ theme }) => theme.spacing(20,0)};
+  padding: ${({ theme }) => theme.spacing(1,0)};
 `;
 
 export const Informacoes = styled("div")``;

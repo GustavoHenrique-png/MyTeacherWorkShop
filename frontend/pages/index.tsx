@@ -1,14 +1,31 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Header from '../src/components/Header/Header'
-import styles from '../styles/Home.module.css'
+import { Box } from "@mui/material";
+import type { NextPage } from "next";
+import { Professor } from "../src/@types/Professor";
+import Lista from "../src/components/Lista/Lista";
 
 const Home: NextPage = () => {
+  const professores: Professor[] = [
+    {
+      id: 1,
+      nome: "Professor1",
+      foto: "https://avatars.githubusercontent.com/u/82185385?v=4",
+      descricao: "Mto gay mesmo olha lá",
+      valorHora: 100,
+    },
+    {
+      id: 2,
+      nome: "Professor2",
+      foto: "https://avatars.githubusercontent.com/u/82185385?v=4",
+      descricao: "Mto gay mesmo olha lá",
+      valorHora: 200,
+    }
+  ];
+
   return (
-    <div><Header/></div>
+    <Box sx={{ backgroundColor: "secondary.main" }}>
+      <Lista professores={professores}/>
+    </Box>
+  );
+};
 
-  )
-}
-
-export default Home
+export default Home;

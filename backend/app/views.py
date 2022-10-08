@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from telnetlib import STATUS
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
-def home(request):
-    return render(request, 'app/home.html')
+
+class HomeApiView(APIView):
+    def get(self, request, format=None):
+        return Response({"nome": "jorge", "idade":23}, status=200)

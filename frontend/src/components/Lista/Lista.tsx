@@ -8,11 +8,14 @@ import {
   Foto,
   ItemLista,
   ListaStyled,
-  ListaVazia
+  ListaVazia,
 } from "./Lista.style";
+import { useState } from "react";
+import { FomatadorServices } from "../../services/FormatadorService";
 
 interface ListaProps {
-  professores: Professor[];
+  professores: Professor[],
+  onSelect: (professor:Professor) => void
 }
 
 const Lista = (props: ListaProps) => {
@@ -26,15 +29,13 @@ const Lista = (props: ListaProps) => {
               <Informacoes>
                 <Nome>{professor.nome}</Nome>
                 <Valor>
-                  {professor.valorHora.toLocaleString('pt-br',{minimumFractionDigits:2,style:'currency', currency:'BRL'})} por
+                  {FomatadorServices.valorMonetario(professor.valorHora)} por
                   hora
                 </Valor>
                 <Descricao>
-                  {professor.descricao}
+                  {FomatadorServices.limitarTexto(professor.descricao, 200)}
                 </Descricao>
-                <Button
-                  sx={{ width: "70%" }}
-                >
+                <Button onClick={()=>props.onSelect(professor)} sx={{ width: "70%" }}>
                   Marcar Aula com {professor.nome}
                 </Button>
               </Informacoes>

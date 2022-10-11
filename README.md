@@ -26,6 +26,7 @@
 <hr>
 
 #### O projeto foi inicializado no front com: `yarn create-next-app . --ts`
+#### O projeto foi inicializado no back com: `django-admin startproject myteacher .`
 
 <hr>
 

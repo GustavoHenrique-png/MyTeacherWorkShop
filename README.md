@@ -19,5 +19,15 @@
 
 <hr>
 
+### Bibliotecas instaldas:
+* Axios: `yarn add axios@0.27.2`
+* mui material: `yarn add @mui/material@5.10.2 @emotion/react@11.10.0 @emotion/styled@11.10.0`
+
+<hr>
+
+#### O projeto foi inicializado no front com: `yarn create-next-app . --ts`
+
+<hr>
+
 ### Pessoas Desenvolvedoras do Projeto
 * O projeto está sendo desenvolvido pelos alunos do Instituto Federal de Goás: Gustavo Henrique Xavier de Brito.

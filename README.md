@@ -31,4 +31,4 @@
 <hr>
 
 ### Pessoas Desenvolvedoras do Projeto
-* O projeto está sendo desenvolvido pelos alunos do Instituto Federal de Goás: Gustavo Henrique Xavier de Brito.
+* O projeto está sendo desenvolvido pelo aluno do Instituto Federal de Goás: Gustavo Henrique Xavier de Brito.
